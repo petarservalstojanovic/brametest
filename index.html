@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wieselburger</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="game-container">
+    <div class="top">
+      <img class="header-logo" src="assets/header-logo.png" />
+      <div class="top-pts">
+        <img class="header-icon" src="./assets/star.png" alt="" />
+        <p class="score">0</p>
+      </div>
+      <div class="top-obst">
+        <img class="header-icon" src="./assets/heart.png" alt="" />
+        <p class="lives">3</p>
+      </div>
+    </div>
+    <div class="introduction">
+      <div class="introduction-text">
+        <img src="https://brame-tailor-made-data.s3.eu-central-1.amazonaws.com/wieselburger/bottle.png" alt="" class="logo" />
+        <div class="introduction-text-wrapper">
+          <h2 id="modal-header">Deine Gewinnchance startet mit einem Plofff!</h2>
+          <p id="modal-text">
+            Sammle 24 Sommer-Items und hol dir die Chance auf deinen Wieselburger-Gewinn.
+          </p>
+          <button id="start-button" class="btn start-button">Weiter</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="bg-img-box">
+        <div class="bg-img-one"></div>
+        <div class="bg-img-two"></div>
+        <div class="bg-img-three"></div>
+      </div>
+      <div class="bg-img-box-two">
+        <div class="bg-img-one"></div>
+        <div class="bg-img-two"></div>
+        <div class="bg-img-three"></div>
+      </div>
+      <div class="map">
+        <div class="grid-one">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+        <div class="grid-two">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+        <!-- <div class="lane-1"></div>
+        <div class="lane-2"></div> -->
+        <div class="hiker-container">
+          <img class="hiker" alt="" />
+        </div>
+        <img id="left-arrow" class="arrow" src="./assets/Arrow.png" alt="" />
+        <img id="right-arrow" class="arrow" src="./assets/Arrow.png" alt="" />
+      </div>
+      <button style="display: none;" id="cta-0"></button>
+      <button style="display: none;" id="cta-1"></button>
+      <button style="display: none;" id="cta-2"></button>
+    </div>
+
+
+    <a href="#clicktag" id="clicktag" target="_self" style="position: absolute; display: none"></a>
+    <a href="#clicktag1" id="clicktag1" target="_self" style="position: absolute; display: none"></a>
+    <a href="#clicktag2" id="clicktag2" target="_self" style="position: absolute; display: none"></a>
+
+    <script>
+      document.querySelector("#clicktag").setAttribute("href", clicktag); //startgameclicktag
+      document.querySelector("#clicktag1").setAttribute("href", clicktag1); //gamewonclicktag
+      document.querySelector("#clicktag2").setAttribute("href", clicktag2); //registerclicktag
+    </script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+    <!-- Main JS -->
+    <script src="./js/eventCatcher.js"></script>
+    <script src="./js/ua-parser.min.js"></script>
+    <script src="./js/md5.js"></script>
+    <script src="./js org/main.js"></script>
+  </body>
+</html>
